@@ -13,13 +13,15 @@ const Time = (props) => {
             <div className='colaboradores'>
                 {
                     props.colaboradores.map(
-                        colaborador => <Colaborador
-                            key={colaborador.imagem}
-                            imagem={colaborador.imagem}
-                            nome={colaborador.nome}
-                            cargo={colaborador.cargo}
-                            time={colaborador.time}>
-                        </Colaborador>
+                        colaborador =>
+                            <Colaborador
+                                corDeFundo={props.corPrimaria}
+                                key={colaborador.nome}
+                                imagem={colaborador.imagem}
+                                nome={colaborador.nome}
+                                cargo={colaborador.cargo}
+                                time={colaborador.time}>
+                            </Colaborador>
                     )
                 }
             </div>
