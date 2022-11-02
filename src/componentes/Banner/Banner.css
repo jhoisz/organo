@@ -1,0 +1,14 @@
+
+.banner {
+    background-color: #0785F2;
+    text-align: center;
+    padding: 32px;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.banner h2 {
+ color: #fff;
+}
